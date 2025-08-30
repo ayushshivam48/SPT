@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Home from './pages/Public/Home';
 import Login from './pages/Auth/Login';
 import Signup from './pages/Auth/Signup';
+import Test from './pages/Test';
 import PrivateRoute from './components/PrivateRoute';
 import AdminDashboard from './pages/Admin/Dashboard';
 import SearchStudents from './pages/Admin/SearchStudents';
@@ -73,6 +74,7 @@ const router = createBrowserRouter([
 	},
 	{ path: '/login', element: <Layout><Login /></Layout> },
 	{ path: '/signup', element: <Layout><Signup /></Layout> },
+	{ path: '/test', element: <Test /> },
 	{
 		path: '/admin',
 		element: <PrivateRoute allow={['admin']} />,
